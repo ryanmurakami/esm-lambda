@@ -1,3 +1,5 @@
+[@std/esm](https://github.com/standard-things/esm)
+
 # Install
 
 ```js
