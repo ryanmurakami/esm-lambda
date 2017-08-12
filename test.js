@@ -1,6 +1,6 @@
-const esm = require('@std/esm')
+require('@std/esm')
 
-import today from './today'
-import yesterday from './yesterday'
+const today = require('./today.mjs')
+const yesterday = require('./yesterday.mjs')
 
 console.log(`Today is ${today()} and yesterday was ${yesterday()}`)
