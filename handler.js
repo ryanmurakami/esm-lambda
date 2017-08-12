@@ -1,12 +1,17 @@
 require('@std/esm')
 
-import today from './today'
-import yesterday from './yesterday'
+const today = require('./today.mjs')
+const yesterday = require('./yesterday.mjs')
+const todayGzipped = require('./today.mjs.gz')
+const yesterdayGzipped = require('./yesterday.mjs.gz')
 
 module.exports.whatday = (event, context, callback) => {
+  const message = `Today is ${today()} and yesterday was ${yesterday()}
+    Gzipped: Today is ${todayGzipped()} and yesterday was ${yesterdayGzipped()}`
+
   const response = {
     statusCode: 200,
-    body: `Today is ${today()} and yesterday was ${yesterday()}`,
+    body: message,
     headers: {
       'Content-Type': 'text/html'
     }
