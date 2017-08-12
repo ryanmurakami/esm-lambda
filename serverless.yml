@@ -1,0 +1,13 @@
+service: esm-lambda
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  whatday:
+    handler: handler.whatday
+    events:
+      - http: GET /
+
+plugins:
+  - serverless-offline
