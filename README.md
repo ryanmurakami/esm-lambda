@@ -22,3 +22,8 @@ Test on AWS Lambda
 ```js
 npm run deploy
 ```
+
+Test on Azure Functions
+```js
+npm run deploy-azure
+```
