@@ -2,7 +2,6 @@ import moment from 'moment'
 
 export default () => {
   return moment()
-    .startOf('day')
-    .fromNow()
+    .subtract(1, 'days')
     .format('MMM Do YYYY')
 }
