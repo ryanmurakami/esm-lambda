@@ -13,11 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "@std/esm": "^0.3.0",
-    "moment": "^2.18.1",
-    "serverless-offline": "^3.15.3"
+    "moment": "^2.18.1"
   },
   "devDependencies": {
-    "serverless-azure-functions": "*"
+    "serverless-azure-functions": "*",
+    "serverless-google-cloudfunctions": "^1.1.0",
+    "serverless-openwhisk": "^0.8.2",
+    "serverless-offline": "^3.15.3"
   },
   "@std/esm": {
     "gz": true
