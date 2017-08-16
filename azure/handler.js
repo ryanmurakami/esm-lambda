@@ -5,7 +5,7 @@ const yesterday = require('./yesterday.mjs').default
 const todayGzipped = require('./today.mjs.gz').default
 const yesterdayGzipped = require('./yesterday.mjs.gz').default
 
-module.exports.hello = function (context) {
+module.exports.whatday = function (context) {
   const message = `Today is ${today()} and yesterday was ${yesterday()}
     Gzipped: Today is ${todayGzipped()} and yesterday was ${yesterdayGzipped()}`
 

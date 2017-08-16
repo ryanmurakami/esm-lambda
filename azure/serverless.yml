@@ -9,7 +9,7 @@ plugins:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.whatday
     events:
       - http: true
         x-azure-settings:
