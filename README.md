@@ -24,6 +24,9 @@ npm run deploy
 ```
 
 Test on Azure Functions
+*** Change the `service` value in `/azure/serverless.yml` to a unique value
 ```js
+cd azure
+npm install
 npm run deploy-azure
 ```
