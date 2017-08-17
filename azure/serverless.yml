@@ -8,7 +8,7 @@ plugins:
   - serverless-azure-functions
 
 functions:
-  hello:
+  whatday:
     handler: handler.whatday
     events:
       - http: true
